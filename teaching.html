@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="teaching">
+  <h2>Teaching experience</h2>
+  <ul>
+    {% for position in site.data.teaching.positions %}
+    <li>
+      {{ position }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+

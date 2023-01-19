@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="title" style="margin-top: 1em;">
+  I am a linguist, which means I am fascinated by the diversity of human languages. My native language is Russian, but only part of my research has been devoted to Russian. For years, I conducted field research in Daghestan, Northern Caucasus, the area of a very high language density. Here, more than 50 languages are still spoken in everyday life and transmitted to the children. I am interested in the study of the evolution and dynamics of linguistic diversity. In my opinion, linguists need to understand mechanisms of language contact, linguistic variation and language change, and this requires a combination of the methods of cross-linguistic comparison with anthropological analysis on the basis of quantitative data. Fortunately, I love collecting and processing language data, and I took part in and supervised creating a series of linguistic databases and corpora. 
+</div>
+
+<div class="interests little">
+  <h2>Fields of interest</h2>
+    {{ site.data.general.fields | join: ", " }}
+</div>
+
+<div class="titles">
+  <div class="title">
+    <h3>
+      Membership of scientific associations (at present)
+    </h3>
+    <ul>
+      {% for assoc in site.data.general.associations %}
+        <li>{{ assoc }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<div class="projects">
+  <h2>
+    Ongoing projects
+  </h2>
+  <ul>
+    {% for project in site.data.general.projects %}
+    <li> {{ project }} </li>
+    {% endfor %}
+  </ul>
+  <h2>Linguistic field trips</h2>
+  Mehweb, Godoberi, Bagvalal, Tsakhur, Archi, Rutul, Tatar, Chuvash, Balkar, Khakas, Ustja River basin dialect of Russian
+</div>

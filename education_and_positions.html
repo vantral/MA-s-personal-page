@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="education">
+  <h2>Education and positions</h2>
+  <table class="edu">
+    {% for position in site.data.education.positions %}
+    <tr>
+      <td style="width: 9em;">{{position.year}}</td>
+      <td>{{position.place}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>

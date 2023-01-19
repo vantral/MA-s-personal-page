@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="plenary">
+  <h2>Invited lectures and plenary talks</h2>
+  <table>
+    {% for lecture in site.data.lectures.invited %}
+    <tr>
+      <td style="width: 9em;">{{lecture.year}}</td>
+      <td>{{lecture.place}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+
+<div class="organization">
+  <h2>Organization of the conferences and meetings</h2>
+  <table>
+    {% for conf in site.data.lectures.conferences %}
+    <tr>
+      <td style="width: 9em;">{{conf.year}}</td>
+      <td>{{conf.place}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
